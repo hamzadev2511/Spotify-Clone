@@ -163,3 +163,9 @@ body {
     background-color: rgb(139, 191, 139);
     padding: 12px;
 }
+
+.songbuttons{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
