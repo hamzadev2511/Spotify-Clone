@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify - Web Player: Music for everyone</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="https://open.spotify.com/favicon.ico">
     <link rel="stylesheet" href="utility.css">
 </head>
 
@@ -23,6 +24,21 @@
                 <div class="heading">
                     <img class="invert" src="playlist.svg" alt="">
                     <h2>Your Library</h2>
+                </div>
+                <div class="songList">
+                    <ul>
+                    <li> 
+                        <img class="invert" src="music.svg" alt="">
+                            <div class="info">
+                                <div>Song name</div>
+                                <div>Artist Name</div>
+                            </div>
+                            <div class="playnow">
+                            <span>Play Now</span>
+                            <img class="invert" src="play.svg" alt="">
+                            </div>
+                    </li>
+                    </ul>
                 </div>
                 <div class="footer">
                     <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
@@ -86,13 +102,18 @@
                 </div>
             </div>
             <div class="playbar">
+                <div class="seekbar">
+                    <div class="circle"></div>
+                </div>
+                <div class="abovebar">
                 <div class="songinfo"></div>
                 <div class="songbuttons">
-                    <img src="prevsong.svg" alt="">
-                    <img src="play.svg" alt="">
-                    <img src="nextsong.svg" alt="">
+                    <img id="previous" src="prevsong.svg" alt="">
+                    <img id="play" src="play.svg" alt="">
+                    <img id="next" src="nextsong.svg" alt="">
                 </div>
                 <div class="songtime"></div>
+            </div>
             </div>
         </div>
         <script src="script.js"></script>
