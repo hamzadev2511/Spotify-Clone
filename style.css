@@ -285,6 +285,10 @@ body {
     width: 373px;
   }
 
+  .songinfo, .songtime{
+    width: auto;
+  }
+
   .left .close{
     position: absolute;
     width: 29px;
